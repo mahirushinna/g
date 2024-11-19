@@ -1,0 +1,13 @@
+clear
+echo "Đang cài đặt"
+apt update && apt upgrade -y && apt install nodejs -y
+clear
+termux-setup-storage
+pkg install nodejs-lts
+npm install discord.js-selfbot-v13 --no-bin-links
+pm fund
+clear
+termux-setup-storage
+pkg install tsu
+clear
+npm install axios
