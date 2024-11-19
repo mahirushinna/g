@@ -2,6 +2,7 @@ clear
 echo "Đang cài đặt"
 apt update && apt upgrade -y && apt install nodejs -y
 clear
+cd /sdcard/download/notify
 termux-setup-storage
 pkg install nodejs-lts
 npm install discord.js-selfbot-v13 --no-bin-links
@@ -10,4 +11,7 @@ clear
 termux-setup-storage
 pkg install tsu
 clear
-npm install axios
+npm install discord.js --no-bin-links
+npm install -g yarn
+yarn add axios
+node notify.js
