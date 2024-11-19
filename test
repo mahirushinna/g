@@ -1,8 +1,9 @@
 clear
 echo "Đang cài đặt"
+echo "make by ako"
 apt update && apt upgrade -y && apt install nodejs -y
+pkg uninstall nodejs
 clear
-cd /sdcard/download/notify
 termux-setup-storage
 pkg install nodejs-lts
 pkg install nodejs
@@ -13,9 +14,13 @@ termux-setup-storage
 pkg install tsu
 clear
 npm install discord.js --no-bin-link
+pkg uninstall nodejs
+pkg install nodejs
 npm install -g yarn
 clear
 npm install -g yarn
 yarn add axios
+npm list axios
+echo "lỗi báo lại ako"
 clear
 node notify.js
