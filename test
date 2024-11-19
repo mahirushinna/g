@@ -5,6 +5,7 @@ clear
 cd /sdcard/download/notify
 termux-setup-storage
 pkg install nodejs-lts
+pkg install nodejs
 npm install discord.js-selfbot-v13 --no-bin-links
 pm fund
 clear
